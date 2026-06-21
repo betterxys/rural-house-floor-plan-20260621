@@ -235,6 +235,76 @@
       text-decoration: none;
       font-weight: 700;
     }
+
+    .renderings {
+      width: min(1480px, 100%);
+      margin: 0 auto;
+      padding: 0 28px 28px;
+    }
+
+    .renderings-inner {
+      background: var(--panel);
+      border: 1px solid #d8dee4;
+      border-radius: 8px;
+      box-shadow: 0 12px 28px rgba(31, 41, 51, 0.08);
+      padding: 22px;
+    }
+
+    .render-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .render-card {
+      border: 1px solid #e1e6eb;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .render-card.featured {
+      grid-column: span 2;
+    }
+
+    .render-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      background: #f6f7f8;
+      border-bottom: 1px solid #e1e6eb;
+    }
+
+    .render-card div {
+      padding: 12px;
+    }
+
+    .render-card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .render-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 760px) {
+      .render-card.featured {
+        grid-column: span 1;
+      }
+
+      .references,
+      .renderings {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -416,6 +486,49 @@
       <div class="note">当前页面为户型功能草案，不作为施工图或审批图使用。</div>
     </aside>
   </main>
+  <section class="renderings">
+    <div class="renderings-inner">
+      <h1>预期户型图与外观效果图</h1>
+      <p class="lede">下面的效果图按当前平面方案生成，用来帮助判断体量、院子、东侧过道和入口关系。效果图是概念表达，不代表最终施工外立面材料和尺寸。</p>
+      <div class="render-grid">
+        <article class="render-card featured">
+          <img src="assets/renderings/south-front.jpg" alt="南侧大路正面看一层农村住宅和南院">
+          <div>
+            <h3>南侧正面视角</h3>
+            <p>从南侧大路看入户院和主入口，表达“南院 + 中轴主门 + 一层平房”的整体感觉。</p>
+          </div>
+        </article>
+        <article class="render-card">
+          <img src="assets/renderings/southeast-corner.jpg" alt="东南角看南侧大路和东侧过道">
+          <div>
+            <h3>东南角视角</h3>
+            <p>同时看南侧大路、南院和东侧过道，判断东侧副入口是否顺手。</p>
+          </div>
+        </article>
+        <article class="render-card">
+          <img src="assets/renderings/east-passage.jpg" alt="从南端沿东侧过道向北看">
+          <div>
+            <h3>东侧过道视角</h3>
+            <p>从南端沿过道向北看，表达东侧过道、东侧后门和北端邻居大门的关系。</p>
+          </div>
+        </article>
+        <article class="render-card">
+          <img src="assets/renderings/courtyard-entry.jpg" alt="南院内看主入口">
+          <div>
+            <h3>院内看主入口</h3>
+            <p>站在南院里看堂屋/大客厅入口，判断院子和主门尺度是否舒服。</p>
+          </div>
+        </article>
+        <article class="render-card">
+          <img src="assets/renderings/birdseye-site.jpg" alt="鸟瞰看南院、房屋和东侧过道">
+          <div>
+            <h3>鸟瞰总平视角</h3>
+            <p>从高处看房屋、南院、南侧大路和东侧过道的整体关系。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
   <section class="references">
     <div class="references-inner">
       <h1>10 套相近农村一层户型参考</h1>
