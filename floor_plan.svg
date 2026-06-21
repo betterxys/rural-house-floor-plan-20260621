@@ -25,23 +25,21 @@
   <rect x="0" y="0" width="900" height="1400" fill="#ffffff"/>
 
   <text x="450" y="48" class="text label">河北农村一层自建房户型示意图</text>
-  <text x="450" y="78" class="text sub">宅基地：东西 15 米 × 南北 28 米；南侧为主路/过道，东侧为南北向过道</text>
+  <text x="450" y="78" class="text sub">宅基地：东西 15 米 × 南北 28 米；北侧邻居，东侧过道，南侧大路</text>
 
   <!-- Outside context -->
   <rect x="118" y="112" width="64" height="1120" class="neighbor"/>
   <text x="150" y="670" class="text outside" transform="rotate(-90 150 670)">西侧邻居</text>
 
   <rect x="718" y="112" width="64" height="1120" class="path"/>
-  <text x="750" y="670" class="text outside" transform="rotate(90 750 670)">东侧过道：北接邻居大门，南接主路</text>
-  <rect x="790" y="112" width="82" height="1120" class="neighbor"/>
-  <text x="831" y="670" class="text outside" transform="rotate(90 831 670)">过道对面另一户人家</text>
+  <text x="750" y="670" class="text outside" transform="rotate(90 750 670)">东侧过道：北端为北侧邻居大门，南端接南侧大路</text>
 
   <rect x="190" y="46" width="600" height="50" class="neighbor"/>
   <text x="490" y="80" class="text outside">北侧邻居</text>
 
   <rect x="190" y="1260" width="600" height="74" class="road"/>
-  <text x="490" y="1304" class="text outside">南侧主路 / 过道</text>
-  <text x="490" y="1360" class="text outside">东侧过道南端接入此主路</text>
+  <text x="490" y="1304" class="text outside">南侧大路</text>
+  <text x="490" y="1360" class="text outside">东侧过道南端接入南侧大路</text>
 
   <!-- Site boundary -->
   <rect x="190" y="112" width="600" height="1120" class="site"/>
@@ -52,7 +50,7 @@
   <text x="720" y="145" class="text small">北</text>
   <text x="720" y="1210" class="text small">南</text>
   <rect x="704" y="96" width="92" height="22" fill="#c7b08b" stroke="#222" stroke-width="2"/>
-  <text x="750" y="91" class="text small">北侧邻居大门</text>
+  <text x="750" y="91" class="text small">北侧邻居大门开向东侧过道</text>
 
   <!-- Front courtyard / entry buffer -->
   <rect x="190" y="1032" width="600" height="200" class="room yard"/>
