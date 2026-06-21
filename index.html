@@ -294,6 +294,41 @@
       line-height: 1.55;
     }
 
+    .interior {
+      width: min(1480px, 100%);
+      margin: 0 auto;
+      padding: 0 28px 28px;
+    }
+
+    .interior-inner {
+      background: var(--panel);
+      border: 1px solid #d8dee4;
+      border-radius: 8px;
+      box-shadow: 0 12px 28px rgba(31, 41, 51, 0.08);
+      padding: 22px;
+    }
+
+    .interior-scroll {
+      overflow: auto;
+      border: 1px solid #e1e6eb;
+      border-radius: 8px;
+      background: #fff;
+      margin-top: 16px;
+    }
+
+    .interior-plan {
+      display: block;
+      width: 100%;
+      min-width: 900px;
+      height: auto;
+    }
+
+    .corridor { fill: #e5e7eb; stroke: #6b7280; stroke-width: 2; stroke-dasharray: 8 6; }
+    .door-gap { stroke: #ffffff; stroke-width: 12; stroke-linecap: square; }
+    .door-swing { fill: none; stroke: #166534; stroke-width: 2; }
+    .door-note { fill: #166534; font-size: 14px; font-weight: 700; }
+    .interior-flow { stroke: #15803d; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; marker-end: url(#interiorFlowArrow); opacity: 0.72; }
+
     @media (max-width: 760px) {
       .render-card.featured {
         grid-column: span 1;
@@ -486,6 +521,106 @@
       <div class="note">当前页面为户型功能草案，不作为施工图或审批图使用。</div>
     </aside>
   </main>
+  <section class="interior">
+    <div class="interior-inner">
+      <h1>室内门与通行关系放大图</h1>
+      <p class="lede">这张图只看室内怎么走：灰色虚线区域是主要通道，白色断口是门，绿色箭头表示主要通行路线。南院从主门进堂屋，再到餐厅/过厅；餐厅/过厅分流到北侧卧室、厨房、储物、卫生间和东侧副入口。</p>
+      <div class="interior-scroll">
+        <svg class="interior-plan" xmlns="http://www.w3.org/2000/svg" width="1100" height="860" viewBox="0 0 1100 860" role="img" aria-label="室内门和通行关系放大图">
+          <rect x="0" y="0" width="1100" height="860" fill="#ffffff"/>
+          <text x="550" y="44" class="text label">室内门、通道、房间串联关系</text>
+          <text x="550" y="74" class="text sub">南下北上：下方是南院/主入口，右侧是东侧过道/副入口</text>
+
+          <rect x="80" y="110" width="900" height="640" fill="#fffdf7" stroke="#25313b" stroke-width="5"/>
+
+          <rect x="350" y="430" width="300" height="290" class="corridor"/>
+          <rect x="350" y="260" width="300" height="170" class="corridor"/>
+          <rect x="650" y="260" width="180" height="170" class="corridor"/>
+          <text x="500" y="585" class="text label">堂屋 / 大客厅</text>
+          <text x="500" y="616" class="text sub">主入口进来先到这里</text>
+          <text x="500" y="340" class="text label">餐厅 / 过厅</text>
+          <text x="500" y="370" class="text sub">室内分流核心</text>
+          <text x="740" y="340" class="text label">东侧副入口</text>
+          <text x="740" y="370" class="text sub">后门，通厨房和东过道</text>
+
+          <rect x="80" y="430" width="270" height="290" class="room"/>
+          <rect x="650" y="430" width="330" height="290" class="room"/>
+          <text x="215" y="565" class="text label">卧室1</text>
+          <text x="215" y="594" class="text sub">南向老人房</text>
+          <text x="815" y="565" class="text label">卧室2</text>
+          <text x="815" y="594" class="text sub">南向主卧</text>
+
+          <rect x="80" y="110" width="270" height="150" class="room"/>
+          <rect x="350" y="110" width="270" height="150" class="room"/>
+          <rect x="620" y="110" width="160" height="150" class="room store"/>
+          <rect x="780" y="110" width="200" height="150" class="room kitchen"/>
+          <text x="215" y="182" class="text label">卧室3</text>
+          <text x="485" y="182" class="text label">卧室4</text>
+          <text x="700" y="180" class="text label">储物间</text>
+          <text x="880" y="180" class="text label">厨房</text>
+          <text x="880" y="210" class="text sub">靠东排烟</text>
+
+          <rect x="80" y="260" width="270" height="170" class="room"/>
+          <rect x="650" y="260" width="95" height="85" class="room bath"/>
+          <rect x="650" y="345" width="95" height="85" class="room store"/>
+          <rect x="745" y="260" width="235" height="170" class="corridor"/>
+          <text x="215" y="344" class="text label">卧室5</text>
+          <text x="698" y="300" class="text sub">预留</text>
+          <text x="698" y="324" class="text sub">卫生间</text>
+          <text x="698" y="385" class="text sub">杂物</text>
+          <text x="698" y="409" class="text sub">换季</text>
+
+          <rect x="350" y="720" width="300" height="85" class="room yard"/>
+          <text x="500" y="770" class="text label">南院</text>
+
+          <line x1="465" y1="720" x2="535" y2="720" class="door-gap"/>
+          <text x="558" y="708" class="text door-note">主门：南院进堂屋</text>
+
+          <line x1="465" y1="430" x2="535" y2="430" class="door-gap"/>
+          <text x="544" y="420" class="text door-note">堂屋通餐厅/过厅</text>
+
+          <line x1="350" y1="545" x2="350" y2="605" class="door-gap"/>
+          <text x="255" y="625" class="text door-note">卧室1门</text>
+
+          <line x1="650" y1="545" x2="650" y2="605" class="door-gap"/>
+          <text x="674" y="625" class="text door-note">卧室2门</text>
+
+          <line x1="350" y1="320" x2="350" y2="380" class="door-gap"/>
+          <text x="258" y="405" class="text door-note">卧室5门</text>
+
+          <line x1="180" y1="260" x2="250" y2="260" class="door-gap"/>
+          <text x="140" y="285" class="text door-note">卧室3门</text>
+
+          <line x1="430" y1="260" x2="500" y2="260" class="door-gap"/>
+          <text x="430" y="285" class="text door-note">卧室4门</text>
+
+          <line x1="665" y1="260" x2="730" y2="260" class="door-gap"/>
+          <text x="640" y="247" class="text door-note">储物门</text>
+
+          <line x1="780" y1="205" x2="780" y2="250" class="door-gap"/>
+          <text x="790" y="245" class="text door-note">厨房门</text>
+
+          <line x1="745" y1="294" x2="745" y2="332" class="door-gap"/>
+          <text x="758" y="315" class="text door-note">卫生间门</text>
+
+          <line x1="980" y1="315" x2="980" y2="385" class="door-gap"/>
+          <text x="988" y="350" class="text door-note">东侧后门</text>
+
+          <path d="M500 718 L500 560 L500 432" class="interior-flow"/>
+          <path d="M500 430 L500 346 L500 262" class="interior-flow"/>
+          <path d="M500 345 L250 345" class="interior-flow"/>
+          <path d="M520 345 L790 345 L978 345" class="interior-flow"/>
+          <text x="536" y="555" class="text door-note">主要室内路线</text>
+
+          <defs>
+            <marker id="interiorFlowArrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L8,3 z" fill="#15803d"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
   <section class="renderings">
     <div class="renderings-inner">
       <h1>预期户型图与外观效果图</h1>
