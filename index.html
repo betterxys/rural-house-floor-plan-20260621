@@ -144,6 +144,8 @@
     .callout-text { fill: #7c2d12; font-size: 15px; font-weight: 700; }
     .route { stroke: #b45309; stroke-width: 5; stroke-dasharray: 12 10; stroke-linecap: round; }
     .route-solid { stroke: #b45309; stroke-width: 4; stroke-linecap: round; }
+    .flow { stroke: #15803d; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; marker-end: url(#flowArrow); opacity: 0.72; }
+    .door-label { fill: #166534; font-size: 15px; font-weight: 700; }
     .road { fill: var(--road); }
     .path { fill: var(--path); }
     .neighbor { fill: var(--neighbor); }
@@ -250,8 +252,8 @@
         <text x="620" y="594" class="text sub">卫生间</text>
         <text x="620" y="680" class="text sub">杂物</text>
         <text x="620" y="706" class="text sub">换季</text>
-        <text x="730" y="612" class="text label">后勤门厅</text>
-        <text x="730" y="640" class="text sub">通厨房和东过道</text>
+        <text x="730" y="612" class="text label">东侧副入口</text>
+        <text x="730" y="640" class="text sub">后门，通厨房和东过道</text>
 
         <rect x="190" y="744" width="180" height="280" class="room"/>
         <rect x="370" y="744" width="240" height="280" class="room living"/>
@@ -271,10 +273,29 @@
         <line x1="370" y1="600" x2="370" y2="660" class="door"/>
         <line x1="670" y1="580" x2="670" y2="640" class="door"/>
         <line x1="790" y1="580" x2="790" y2="640" class="door"/>
+        <line x1="262" y1="744" x2="318" y2="744" class="door"/>
+        <line x1="672" y1="744" x2="728" y2="744" class="door"/>
+        <line x1="262" y1="520" x2="318" y2="520" class="door"/>
+        <line x1="422" y1="520" x2="478" y2="520" class="door"/>
+        <line x1="610" y1="520" x2="650" y2="520" class="door"/>
+        <line x1="610" y1="632" x2="650" y2="632" class="door"/>
+        <line x1="610" y1="320" x2="650" y2="320" class="door"/>
+        <line x1="710" y1="496" x2="750" y2="496" class="door"/>
+        <text x="545" y="1008" class="text door-label">主门</text>
+        <text x="748" y="552" class="text door-label">东侧后门</text>
+        <text x="490" y="735" class="text door-label">内门</text>
+        <path d="M535 1030 L535 930 L535 760" class="flow"/>
+        <path d="M535 744 L535 690 L535 540" class="flow"/>
+        <path d="M535 700 L350 700" class="flow"/>
+        <path d="M545 730 L775 730 L775 620" class="flow"/>
+        <text x="552" y="965" class="text door-label">入户动线</text>
 
         <defs>
           <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
             <path d="M0,0 L0,6 L6,3 z" fill="#333"/>
+          </marker>
+          <marker id="flowArrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L8,3 z" fill="#15803d"/>
           </marker>
         </defs>
         <path d="M490 1260 L490 1230" stroke="#333" stroke-width="4" marker-end="url(#arrow)"/>
@@ -284,7 +305,7 @@
 
     <aside class="info">
       <h1>一层五卧户型方案</h1>
-      <p class="lede">按农村一层住宅的生活动线重做：南侧先留院子，正中进堂屋/大客厅；常住房间尽量南向；厨房、储物和后勤门靠东侧过道，方便排烟、搬运和日常出入。</p>
+      <p class="lede">按农村一层住宅的生活动线重做：南侧先留院子，正中进堂屋/大客厅；常住房间尽量南向；厨房、储物和东侧副入口靠东侧过道，方便排烟、搬运和日常出入。</p>
 
       <h2>房间配置</h2>
       <table>
@@ -298,8 +319,8 @@
         <tbody>
           <tr><td>卧室</td><td>5 间</td><td>南侧 2 间优先给老人/主卧；北侧 3 间作子女房、客房或备用房</td></tr>
           <tr><td>堂屋 / 大客厅</td><td>1 处</td><td>居中南向，约 6m × 7m，承担会客、家庭活动和入户核心</td></tr>
-          <tr><td>厨房</td><td>1 间</td><td>东北侧靠东过道，便于排烟、买菜和后勤出入</td></tr>
-          <tr><td>储物间</td><td>1 间</td><td>靠厨房和后勤区，适合粮油、工具、杂物</td></tr>
+          <tr><td>厨房</td><td>1 间</td><td>东北侧靠东过道，便于排烟、买菜和从东侧副入口进出</td></tr>
+          <tr><td>储物间</td><td>1 间</td><td>靠厨房和副入口，适合粮油、工具、杂物</td></tr>
           <tr><td>餐厅 / 过厅</td><td>1 处</td><td>在客厅北侧，连接卧室、厨房和客厅，减少穿房动线</td></tr>
           <tr><td>南院</td><td>1 处</td><td>约 15m × 5.2m，停车、晾晒、缓冲入户</td></tr>
         </tbody>
@@ -307,6 +328,7 @@
 
       <h2>设计思路</h2>
       <ul>
+        <li>图中白色断口表示门，绿色箭头表示主要通行路线。</li>
         <li>南侧临大路，先留院子，避免一开门就进室内，也方便停车、晾晒和待客。</li>
         <li>堂屋/大客厅放中轴线，农村使用上更像家的核心空间，南向采光和仪式感都更好。</li>
         <li>卧室不再全部围着客厅开门，南北分区后，休息区受客厅和厨房干扰更小。</li>
