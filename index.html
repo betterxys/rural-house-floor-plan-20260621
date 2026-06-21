@@ -174,6 +174,67 @@
         font-size: 24px;
       }
     }
+
+    .references {
+      width: min(1480px, 100%);
+      margin: 0 auto 32px;
+      padding: 0 28px 28px;
+    }
+
+    .references-inner {
+      background: var(--panel);
+      border: 1px solid #d8dee4;
+      border-radius: 8px;
+      box-shadow: 0 12px 28px rgba(31, 41, 51, 0.08);
+      padding: 22px;
+    }
+
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .ref-card {
+      border: 1px solid #e1e6eb;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .ref-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 0.8;
+      object-fit: contain;
+      background: #f6f7f8;
+      border-bottom: 1px solid #e1e6eb;
+    }
+
+    .ref-card div {
+      padding: 12px;
+    }
+
+    .ref-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .ref-card p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .ref-card a {
+      color: #145ea8;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -355,5 +416,93 @@
       <div class="note">当前页面为户型功能草案，不作为施工图或审批图使用。</div>
     </aside>
   </main>
+  <section class="references">
+    <div class="references-inner">
+      <h1>10 套相近农村一层户型参考</h1>
+      <p class="lede">这些案例主要用于看别人的图纸表达方式和空间组织：门厅/堂屋怎么处理、客厅和餐厨怎么连、卧室如何分布、厨房和储物如何靠近后勤区。图片来自原网页或原图地址，点击可看来源。</p>
+      <div class="ref-grid">
+        <article class="ref-card">
+          <img src="https://www.jianfang8.com/uploadfile/2021/0815/20210815103334636.jpg" alt="20.4米乘15.6米一层三合院平面图">
+          <div>
+            <h3>20.4m × 15.6m 一层三合院</h3>
+            <p>中庭花园居中，客厅和卧室围绕庭院布置，动线清楚。</p>
+            <a href="https://www.jianfang8.com/show-12-320-1.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.on15.cn/uploads/allimg/201212/15315BB9-3.jpg" alt="中式一层四合院带院子平面图">
+          <div>
+            <h3>19.26m × 19.43m 一层四合院</h3>
+            <p>院子居中，东西两侧布置卧室和餐厨，适合比较大的宅院。</p>
+            <a href="https://www.on15.cn/zhishi/7859.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.on15.cn/uploads/allimg/201212/1531563261-5.jpg" alt="16.76米乘18.8米一层三合院带庭院平面图">
+          <div>
+            <h3>16.76m × 18.8m 一层三合院</h3>
+            <p>客厅为中心，两侧布置卧室，庭院和连廊改善采光通风。</p>
+            <a href="https://www.on15.cn/zhishi/7859.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.jianfang8.com/uploadfile/2022/0615/20220615141929891.jpg" alt="15米乘12米一层自建房平面图">
+          <div>
+            <h3>14.5m × 12.3m 一层自建房</h3>
+            <p>中间神位和客厅，卧室分布两侧，厨房餐厅靠一边。</p>
+            <a href="https://www.jianfang8.com/show-12-576-1.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.jianfang8.com/uploadfile/2021/1210/20211210152153558.jpg" alt="15.3米一层四室两厅平面图">
+          <div>
+            <h3>15.3m × 10m 四室两厅</h3>
+            <p>四间卧室分布四角，客厅居中，餐厨相邻，上菜和活动动线短。</p>
+            <a href="https://www.jianfang8.com/show-22-9040-1.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.jianfang8.com/uploadfile/2022/0429/20220429135829545.jpg" alt="140平方米一层自建房平面图">
+          <div>
+            <h3>约 12.8m × 12.5m 一层小别墅</h3>
+            <p>客餐厅相连，厨房靠近餐厅，卧室围绕公共空间布置。</p>
+            <a href="https://www.jianfang8.com/show-22-9040-1.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.on15.cn/uploads/allimg/220128/101523H54-3.jpg" alt="16米乘10米农村大平层平面图">
+          <div>
+            <h3>16m × 10m 农村大平层</h3>
+            <p>四卧分布四角，客厅居中，厨房餐厅在北侧，储物靠卧室侧。</p>
+            <a href="https://www.on15.cn/zhishi/9474.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://tuzhizhijia.com/uploads/allimg/230416/1_230416135053_2.jpg" alt="14米乘12.5米左右对称一层户型图">
+          <div>
+            <h3>14m × 12.5m 左右对称布局</h3>
+            <p>客厅居中，餐厨在北侧，卧室和书房围绕两侧布置。</p>
+            <a href="https://tuzhizhijia.com/yicengbieshu/23154.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://www.on15.cn/uploads/allimg/250831/1_250831153656_1.jpg" alt="13米乘14米一层带露台平面图">
+          <div>
+            <h3>13m × 14m 一层带露台</h3>
+            <p>客厅和餐厅分区清楚，卧室靠四周，前侧露台作为入户缓冲。</p>
+            <a href="https://www.on15.cn/yiceng/10024.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+        <article class="ref-card">
+          <img src="https://tuzhizhijia.com/uploads/allimg/180331/1601142a8-3.jpg" alt="20.2米乘15.2米一层带车库平面图">
+          <div>
+            <h3>20.2m × 15.2m 一层带车库</h3>
+            <p>大面宽宅基地案例，客厅、餐厅、卧室和车库围绕中心动线组织。</p>
+            <a href="https://tuzhizhijia.com/gaifangzhishi/5559.html" target="_blank" rel="noopener">查看来源</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
