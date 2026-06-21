@@ -15,6 +15,10 @@
       .small { font-size: 16px; }
       .outside { fill: #555; font-size: 22px; font-weight: 700; }
       .dim { fill: #333; font-size: 18px; }
+      .callout { fill: #fffdf7; stroke: #b45309; stroke-width: 2; }
+      .callout-text { fill: #7c2d12; font-size: 15px; font-weight: 700; }
+      .route { stroke: #b45309; stroke-width: 5; stroke-dasharray: 12 10; stroke-linecap: round; }
+      .route-solid { stroke: #b45309; stroke-width: 4; stroke-linecap: round; }
       .road { fill: #dedede; }
       .path { fill: #e8edf5; }
       .neighbor { fill: #eee8df; }
@@ -33,6 +37,8 @@
 
   <rect x="718" y="112" width="64" height="1120" class="path"/>
   <text x="750" y="670" class="text outside" transform="rotate(90 750 670)">东侧过道：北端为北侧邻居大门，南端接南侧大路</text>
+  <line x1="750" y1="140" x2="750" y2="1218" class="route"/>
+  <path d="M750 1236 L734 1208 L766 1208 Z" fill="#b45309"/>
 
   <rect x="190" y="46" width="600" height="50" class="neighbor"/>
   <text x="490" y="80" class="text outside">北侧邻居</text>
@@ -49,8 +55,16 @@
   <text x="812" y="676" class="text dim" transform="rotate(90 812 676)">28m</text>
   <text x="720" y="145" class="text small">北</text>
   <text x="720" y="1210" class="text small">南</text>
-  <rect x="704" y="96" width="92" height="22" fill="#c7b08b" stroke="#222" stroke-width="2"/>
-  <text x="750" y="91" class="text small">北侧邻居大门开向东侧过道</text>
+  <rect x="716" y="92" width="68" height="28" fill="#b45309" stroke="#222" stroke-width="2"/>
+  <text x="750" y="88" class="text small">北侧邻居大门</text>
+  <line x1="784" y1="106" x2="804" y2="134" class="route-solid"/>
+  <rect x="794" y="126" width="96" height="58" rx="4" class="callout"/>
+  <text x="842" y="150" class="text callout-text">过道北端</text>
+  <text x="842" y="170" class="text callout-text">就是邻居大门</text>
+  <line x1="782" y1="1222" x2="804" y2="1204" class="route-solid"/>
+  <rect x="794" y="1160" width="96" height="62" rx="4" class="callout"/>
+  <text x="842" y="1185" class="text callout-text">过道南端</text>
+  <text x="842" y="1205" class="text callout-text">接南侧大路</text>
 
   <!-- Front courtyard / entry buffer -->
   <rect x="190" y="1032" width="600" height="200" class="room yard"/>
