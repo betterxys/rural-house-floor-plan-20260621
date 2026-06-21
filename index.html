@@ -131,6 +131,7 @@
     .living { fill: var(--blue); }
     .kitchen { fill: var(--orange); }
     .store { fill: var(--stone); }
+    .bath { fill: #e7f6f4; }
     .yard { fill: var(--green); }
     .door { stroke: #fffdf7; stroke-width: 8; stroke-linecap: square; }
     .text { font-family: Arial, "Microsoft YaHei", sans-serif; fill: #1f1f1f; text-anchor: middle; }
@@ -204,6 +205,9 @@
         <text x="530" y="1306" class="text outside">东侧过道南端接入南侧大路</text>
 
         <rect x="190" y="112" width="600" height="1120" class="site"/>
+        <rect x="190" y="112" width="600" height="208" class="room yard"/>
+        <text x="490" y="198" class="text label">北侧后院 / 采光缓冲</text>
+        <text x="490" y="228" class="text sub">约 15m × 5.2m，减少北侧邻居干扰</text>
         <text x="490" y="106" class="text dim">15m</text>
         <text x="812" y="676" class="text dim" transform="rotate(90 812 676)">28m</text>
         <text x="720" y="145" class="text small">北</text>
@@ -212,58 +216,61 @@
         <text x="928" y="1191" class="text callout-text">过道南端</text>
         <text x="928" y="1211" class="text callout-text">接南侧大路</text>
 
-        <rect x="190" y="1032" width="600" height="200" class="room yard"/>
-        <text x="490" y="1125" class="text label">南院 / 入户缓冲</text>
-        <text x="490" y="1155" class="text sub">15m × 5m，可停车、晾晒、入户</text>
+        <rect x="190" y="1024" width="600" height="208" class="room yard"/>
+        <text x="490" y="1115" class="text label">南院 / 入户缓冲</text>
+        <text x="490" y="1145" class="text sub">15m × 5.2m，停车、晾晒、待客</text>
 
-        <rect x="190" y="112" width="600" height="920" fill="none" stroke="#25313b" stroke-width="5"/>
+        <rect x="190" y="320" width="600" height="704" fill="none" stroke="#25313b" stroke-width="5"/>
+        <text x="490" y="310" class="text small">主体房屋约 15m × 17.6m，北侧留后窗/检修缓冲</text>
 
-        <rect x="190" y="112" width="200" height="200" class="room"/>
-        <rect x="390" y="112" width="200" height="200" class="room"/>
-        <rect x="590" y="112" width="200" height="200" class="room"/>
-        <text x="290" y="198" class="text label">卧室1</text>
-        <text x="290" y="226" class="text sub">5m × 5m</text>
-        <text x="490" y="198" class="text label">卧室2</text>
-        <text x="490" y="226" class="text sub">5m × 5m</text>
-        <text x="690" y="198" class="text label">卧室3</text>
-        <text x="690" y="226" class="text sub">5m × 5m</text>
+        <rect x="190" y="320" width="180" height="176" class="room"/>
+        <rect x="370" y="320" width="180" height="176" class="room"/>
+        <rect x="550" y="320" width="120" height="176" class="room store"/>
+        <rect x="670" y="320" width="120" height="176" class="room kitchen"/>
+        <text x="280" y="390" class="text label">卧室3</text>
+        <text x="280" y="418" class="text sub">4.5m × 5m</text>
+        <text x="460" y="390" class="text label">卧室4</text>
+        <text x="460" y="418" class="text sub">4.5m × 5m</text>
+        <text x="610" y="388" class="text label">储物间</text>
+        <text x="610" y="416" class="text sub">3m × 5m</text>
+        <text x="730" y="388" class="text label">厨房</text>
+        <text x="730" y="416" class="text sub">3m × 5m</text>
+        <text x="730" y="442" class="text small">靠东过道排烟</text>
 
-        <rect x="190" y="312" width="200" height="280" class="room"/>
-        <rect x="390" y="312" width="200" height="280" class="room living"/>
-        <rect x="590" y="312" width="200" height="280" class="room"/>
-        <text x="290" y="438" class="text label">卧室4</text>
-        <text x="290" y="466" class="text sub">5m × 7m</text>
-        <text x="490" y="424" class="text label">大客厅</text>
-        <text x="490" y="452" class="text sub">5m × 7m</text>
-        <text x="490" y="480" class="text small">可做堂屋/会客/餐区</text>
-        <text x="690" y="438" class="text label">卧室5</text>
-        <text x="690" y="466" class="text sub">5m × 7m</text>
+        <rect x="190" y="520" width="180" height="224" class="room"/>
+        <rect x="370" y="520" width="200" height="224" class="room living"/>
+        <rect x="570" y="520" width="100" height="112" class="room bath"/>
+        <rect x="570" y="632" width="100" height="112" class="room store"/>
+        <rect x="670" y="520" width="120" height="224" class="room living"/>
+        <text x="280" y="614" class="text label">卧室5</text>
+        <text x="280" y="642" class="text sub">4.5m × 5.6m</text>
+        <text x="470" y="602" class="text label">餐厅 / 过厅</text>
+        <text x="470" y="630" class="text sub">连接客厅、卧室、厨房</text>
+        <text x="620" y="568" class="text sub">预留</text>
+        <text x="620" y="594" class="text sub">卫生间</text>
+        <text x="620" y="680" class="text sub">杂物</text>
+        <text x="620" y="706" class="text sub">换季</text>
+        <text x="730" y="612" class="text label">后勤门厅</text>
+        <text x="730" y="640" class="text sub">通厨房和东过道</text>
 
-        <rect x="190" y="592" width="200" height="200" class="room store"/>
-        <rect x="390" y="592" width="200" height="200" class="room living"/>
-        <rect x="590" y="592" width="200" height="200" class="room kitchen"/>
-        <text x="290" y="680" class="text label">储物间</text>
-        <text x="290" y="708" class="text sub">5m × 5m</text>
-        <text x="490" y="670" class="text label">客厅延伸</text>
-        <text x="490" y="698" class="text sub">门厅 / 餐区</text>
-        <text x="490" y="726" class="text small">与客厅连通</text>
-        <text x="690" y="680" class="text label">厨房</text>
-        <text x="690" y="708" class="text sub">5m × 5m</text>
+        <rect x="190" y="744" width="180" height="280" class="room"/>
+        <rect x="370" y="744" width="240" height="280" class="room living"/>
+        <rect x="610" y="744" width="180" height="280" class="room"/>
+        <text x="280" y="864" class="text label">卧室1</text>
+        <text x="280" y="892" class="text sub">南向老人房</text>
+        <text x="280" y="920" class="text sub">4.5m × 7m</text>
+        <text x="490" y="848" class="text label">堂屋 / 大客厅</text>
+        <text x="490" y="878" class="text sub">6m × 7m，南向入户</text>
+        <text x="490" y="906" class="text small">会客、家庭活动、祭祀陈设</text>
+        <text x="700" y="864" class="text label">卧室2</text>
+        <text x="700" y="892" class="text sub">南向主卧</text>
+        <text x="700" y="920" class="text sub">4.5m × 7m</text>
 
-        <rect x="190" y="792" width="600" height="240" class="room yard"/>
-        <text x="490" y="895" class="text label">前廊 / 半室外活动区</text>
-        <text x="490" y="925" class="text sub">15m × 6m，连接南院和室内</text>
-
-        <line x1="455" y1="792" x2="525" y2="792" class="door"/>
-        <line x1="455" y1="592" x2="525" y2="592" class="door"/>
-        <line x1="455" y1="312" x2="525" y2="312" class="door"/>
-        <line x1="265" y1="312" x2="315" y2="312" class="door"/>
-        <line x1="465" y1="312" x2="515" y2="312" class="door"/>
-        <line x1="665" y1="312" x2="715" y2="312" class="door"/>
-        <line x1="390" y1="430" x2="390" y2="490" class="door"/>
-        <line x1="590" y1="430" x2="590" y2="490" class="door"/>
-        <line x1="390" y1="665" x2="390" y2="720" class="door"/>
-        <line x1="590" y1="665" x2="590" y2="720" class="door"/>
+        <line x1="455" y1="1024" x2="525" y2="1024" class="door"/>
+        <line x1="455" y1="744" x2="525" y2="744" class="door"/>
+        <line x1="370" y1="600" x2="370" y2="660" class="door"/>
+        <line x1="670" y1="580" x2="670" y2="640" class="door"/>
+        <line x1="790" y1="580" x2="790" y2="640" class="door"/>
 
         <defs>
           <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
@@ -277,7 +284,7 @@
 
     <aside class="info">
       <h1>一层五卧户型方案</h1>
-      <p class="lede">按 15m × 28m 宅基地绘制。北侧是一户人家，东侧为过道，东侧过道北端是北侧邻居大门，南端接南侧大路。</p>
+      <p class="lede">按农村一层住宅的生活动线重做：南侧先留院子，正中进堂屋/大客厅；常住房间尽量南向；厨房、储物和后勤门靠东侧过道，方便排烟、搬运和日常出入。</p>
 
       <h2>房间配置</h2>
       <table>
@@ -289,13 +296,23 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>卧室</td><td>5 间</td><td>3 间 5m × 5m；2 间 5m × 7m</td></tr>
-          <tr><td>大客厅</td><td>1 处</td><td>5m × 7m，向南连门厅/餐区</td></tr>
-          <tr><td>厨房</td><td>1 间</td><td>5m × 5m，靠东侧便于通风和出入</td></tr>
-          <tr><td>储物间</td><td>1 间</td><td>5m × 5m，靠西南侧</td></tr>
-          <tr><td>南院</td><td>1 处</td><td>15m × 5m</td></tr>
+          <tr><td>卧室</td><td>5 间</td><td>南侧 2 间优先给老人/主卧；北侧 3 间作子女房、客房或备用房</td></tr>
+          <tr><td>堂屋 / 大客厅</td><td>1 处</td><td>居中南向，约 6m × 7m，承担会客、家庭活动和入户核心</td></tr>
+          <tr><td>厨房</td><td>1 间</td><td>东北侧靠东过道，便于排烟、买菜和后勤出入</td></tr>
+          <tr><td>储物间</td><td>1 间</td><td>靠厨房和后勤区，适合粮油、工具、杂物</td></tr>
+          <tr><td>餐厅 / 过厅</td><td>1 处</td><td>在客厅北侧，连接卧室、厨房和客厅，减少穿房动线</td></tr>
+          <tr><td>南院</td><td>1 处</td><td>约 15m × 5.2m，停车、晾晒、缓冲入户</td></tr>
         </tbody>
       </table>
+
+      <h2>设计思路</h2>
+      <ul>
+        <li>南侧临大路，先留院子，避免一开门就进室内，也方便停车、晾晒和待客。</li>
+        <li>堂屋/大客厅放中轴线，农村使用上更像家的核心空间，南向采光和仪式感都更好。</li>
+        <li>卧室不再全部围着客厅开门，南北分区后，休息区受客厅和厨房干扰更小。</li>
+        <li>厨房放东北角，靠东侧过道，油烟、柴米粮油搬运、垃圾清理都更顺手。</li>
+        <li>预留卫生间/洗浴位，即使你现在没提，实际长期居住也建议先占位。</li>
+      </ul>
 
       <h2>外部关系</h2>
       <ul>
